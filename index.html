@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JS Type Explorer | Ajay</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="wrap">
+    <header class="hero">
+      <p class="badge">Placement Mini Project</p>
+      <h1>JavaScript Type Explorer</h1>
+      <p>Interactive demo built from my practice in datatype conversion and comparison.</p>
+    </header>
+
+    <section class="card input-card">
+      <h2>Try Values</h2>
+      <div class="grid">
+        <label>
+          Value A
+          <input id="valueA" placeholder="Example: 33" value="33" />
+        </label>
+        <label>
+          Type A
+          <select id="typeA">
+            <option value="string">string</option>
+            <option value="number" selected>number</option>
+            <option value="boolean">boolean</option>
+            <option value="null">null</option>
+            <option value="undefined">undefined</option>
+            <option value="bigint">bigint</option>
+          </select>
+        </label>
+        <label>
+          Value B
+          <input id="valueB" placeholder="Example: 2" value="2" />
+        </label>
+        <label>
+          Type B
+          <select id="typeB">
+            <option value="string" selected>string</option>
+            <option value="number">number</option>
+            <option value="boolean">boolean</option>
+            <option value="null">null</option>
+            <option value="undefined">undefined</option>
+            <option value="bigint">bigint</option>
+          </select>
+        </label>
+      </div>
+      <button id="analyzeBtn">Analyze</button>
+      <p class="hint">Tip: compare "2" (string) with 2 (number) to see == vs === difference.</p>
+    </section>
+
+    <section class="card" id="summaryCard">
+      <h2>Value A Summary</h2>
+      <div id="summary"></div>
+    </section>
+
+    <section class="card" id="comparisonCard">
+      <h2>A vs B Comparison</h2>
+      <div id="comparison"></div>
+    </section>
+
+    <section class="card">
+      <h2>Practice Concepts Included</h2>
+      <ul>
+        <li>Primitive and reference types</li>
+        <li>String/Number/Boolean conversion behavior</li>
+        <li>Loose equality (`==`) vs strict equality (`===`)</li>
+        <li>Relational comparison edge cases with mixed types</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

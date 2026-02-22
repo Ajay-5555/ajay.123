@@ -1,0 +1,150 @@
+:root {
+  --bg: #f3efe3;
+  --ink: #1f2a44;
+  --accent: #1a7f64;
+  --panel: #fffaf0;
+  --line: #d8ccb2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--ink);
+  background: radial-gradient(circle at top left, #f9f3e6, #efe5d0 55%, #e5d4b7);
+  min-height: 100vh;
+}
+
+.wrap {
+  width: min(940px, 92vw);
+  margin: 2rem auto;
+  display: grid;
+  gap: 1rem;
+}
+
+.hero {
+  background: linear-gradient(120deg, #fbf4df, #f4e2c0);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 1.2rem;
+}
+
+.badge {
+  display: inline-block;
+  margin: 0 0 0.4rem;
+  background: #ddf4ea;
+  color: #0f5d49;
+  border-radius: 999px;
+  padding: 0.2rem 0.7rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(1.4rem, 2.2vw, 2rem);
+}
+
+.hero p {
+  margin: 0.5rem 0 0;
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 1rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.8rem;
+}
+
+label {
+  display: grid;
+  gap: 0.35rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+input,
+select,
+button {
+  font: inherit;
+}
+
+input,
+select {
+  border: 1px solid #c8b99b;
+  border-radius: 10px;
+  padding: 0.52rem 0.62rem;
+  background: #fff;
+}
+
+button {
+  margin-top: 0.9rem;
+  border: 0;
+  border-radius: 10px;
+  padding: 0.58rem 0.95rem;
+  font-weight: 700;
+  background: var(--accent);
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(0.95);
+}
+
+.hint {
+  font-size: 0.86rem;
+  margin: 0.65rem 0 0;
+  color: #3e4f69;
+}
+
+.table {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid #d6c7aa;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.row {
+  display: contents;
+}
+
+.row div {
+  padding: 0.52rem 0.62rem;
+  border-bottom: 1px solid #e4d8c2;
+}
+
+.row div:nth-child(odd) {
+  background: #fff;
+  font-weight: 600;
+}
+
+.row div:nth-child(even) {
+  background: #fff9ec;
+}
+
+.error {
+  color: #a42525;
+  font-weight: 700;
+}
+
+ul {
+  margin: 0.5rem 0 0;
+  padding-left: 1.15rem;
+}
+
+@media (max-width: 600px) {
+  .wrap {
+    margin: 1rem auto;
+  }
+}

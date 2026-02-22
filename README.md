@@ -48,3 +48,23 @@ node comparison.js
 
 ---
 If you are reviewing this profile, this repo reflects active learning and deliberate practice in JavaScript fundamentals and DSA.
+
+## Placement Mini Project: JavaScript Type Explorer
+A small interactive web app created from this repository's practice topics:
+- Datatype understanding (primitive vs reference awareness)
+- Type conversion (`Number`, `String`, `Boolean`)
+- Comparison behavior (`==`, `===`, `>`, `>=`, `<`, `<=`)
+
+### Files
+- `index.html` - UI for entering values and selecting data types.
+- `styles.css` - Responsive styling.
+- `app.js` - Conversion and comparison logic.
+- `server.js` - Zero-dependency local static server.
+- `package.json` - Start script.
+
+### Run This Project
+```bash
+npm start
+```
+Then open:
+`http://localhost:3000`
