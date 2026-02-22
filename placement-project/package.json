@@ -1,0 +1,12 @@
+{
+  "name": "js-type-explorer",
+  "version": "1.0.0",
+  "description": "Mini JavaScript project for datatype conversion and comparison.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": ["javascript", "datatypes", "comparison", "placements"],
+  "author": "Ajay",
+  "license": "MIT"
+}
