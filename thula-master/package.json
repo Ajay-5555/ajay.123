@@ -1,0 +1,10 @@
+{
+  "name": "thula-master",
+  "version": "1.0.0",
+  "description": "Small card game mini project",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "MIT"
+}
